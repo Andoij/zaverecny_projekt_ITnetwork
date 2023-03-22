@@ -17,7 +17,7 @@ class Databaze:
         vek = input("Zadejte věk:\n")
         novy_pojistenec = Pojistenec(jmeno, prijmeni, telefon, vek)
         self._databaze_pojistencu.update({jmeno+prijmeni: novy_pojistenec})
-        input("Data byla uložena. Pokračujte stiskem libovolné klávesy...") # Textovou reprezentaci zvlášť.
+        input("Data byla uložena. Pokračujte stiskem libovolné klávesy...") 
         #back to menu
 
     def vypis_pojistene(self):
@@ -26,7 +26,7 @@ class Databaze:
         else:
             for pojisteny in self._databaze_pojistencu:
                 print(self._databaze_pojistencu[pojisteny])
-            input("Pokračujte libovolnou klávesou...") #Textová reprezentace zvlášť ??
+            input("Pokračujte libovolnou klávesou...") 
             #back to menu
 
     def vyhledej_pojisteneho(self):
@@ -36,5 +36,5 @@ class Databaze:
             print((self._databaze_pojistencu[jmeno+prijmeni]))
         else:
             print("Pojištěnec nebyl nalezen.")
-        input("Pokračujte libovolnou klávesou...") #Textová reprezentace
+        input("Pokračujte libovolnou klávesou...") 
         #back to menu
